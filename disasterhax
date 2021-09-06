@@ -4,6 +4,9 @@ local w = library:CreateWindow("Disaster Hax") -- Creates the window
 
 local a = w:CreateFolder("Main")
 
+if is_synapse_function then
+    messagebox("discord.gg/GErTYBmKu4","Join The Discord!",0)
+
 
 a:Button("auto win",function()
     while wait () do
@@ -25,8 +28,5 @@ b:Label("Pretty Useless NGL",{
     BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
     
 }) 
-
-if is_synapse_function then
-    messagebox("discord.gg/GErTYBmKu4","Join The Discord!",0)
 
 end
