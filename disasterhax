@@ -1,0 +1,32 @@
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+
+local w = library:CreateWindow("Disaster Hax") -- Creates the window
+
+local a = w:CreateFolder("Main")
+
+
+a:Button("auto win",function()
+    while wait () do
+
+        local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+        local location = CFrame.new(511, 481, -552)
+        local humanoid = game.Players.LocalPlayer.Character.Humanoid
+        humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+        wait(0.1)
+        pl.CFrame = location
+        
+        end
+
+end)
+
+b:Label("Pretty Useless NGL",{
+    TextSize = 25; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+    
+}) 
+
+if is_synapse_function then
+    messagebox("discord.gg/GErTYBmKu4","Join The Discord!",0)
+
+end
