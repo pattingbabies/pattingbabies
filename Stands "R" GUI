@@ -1,0 +1,190 @@
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+
+local w = library:CreateWindow("Jotaro GUI") -- Creates the window
+
+local a = w:CreateFolder("Teleport To Mobs") -- Creates the folder(U will put here your buttons,etc)
+local b = w:CreateFolder("Extra") -- Creates the folder(U will put here your buttons,etc)
+
+a:Label("Teleporting",{
+    TextSize = 25; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+    
+}) 
+
+b:Button("Teleport Tool",function()
+    local plr = game:GetService("Players").LocalPlayer
+    local mouse = plr:GetMouse()
+    
+    local tool = Instance.new("Tool")
+    tool.RequiresHandle = false
+    tool.Name = "Click Teleport"
+    
+    tool.Activated:Connect(function()
+    local root = plr.Character.HumanoidRootPart
+    local pos = mouse.Hit.Position+Vector3.new(0,2.5,0)
+    local offset = pos-root.Position
+    root.CFrame = root.CFrame+offset
+    end)
+    
+    tool.Parent = plr.Backpack
+end)
+
+a:Button("Arrow",function()
+    
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = (game:GetService("Workspace").Items.Arrow.Handle.CFrame)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+    
+
+end)
+
+a:Button("Rokaka Fruit",function()
+
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = (game:GetService("Workspace").Items["Rokakaka Fruit"].Handle.CFrame)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+    
+
+
+end)
+
+a:Button("Exp Stand User",function()
+
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = (game:GetService("Workspace").Living.ExpBoss.Head.CFrame)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+    
+
+
+end)
+
+a:Button("Slender",function()
+
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = (game:GetService("Workspace").Living.Slender.Head.CFrame)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+    
+
+
+end)
+
+a:Button("Deflecting Dummy",function()
+
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = (game:GetService("Workspace").Living["Deflecting Dummy"].Head.CFrame)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+    
+
+
+end)
+
+a:Button("Sus",function()
+
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = (game:GetService("Workspace").Living.Sus.Head.CFrame)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+    
+
+
+end)
+a:Button("New Stand User",function()
+
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = (game:GetService("Workspace").Living.NewStandUser.Head.CFrame)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+    
+
+
+end)
+a:Button("Josuke Boss",function()
+
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = (game:GetService("Workspace").Living.JosukeBoss.Head.CFrame)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+    
+
+
+end)
+
+a:Button("Dio Boss",function()
+
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = (game:GetService("Workspace").Living.DioBossNormal.HumanoidRootPart.CFrame)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+    
+
+
+end)
+
+a:Button("Anti Vaxer",function()
+
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = (game:GetService("Workspace").Living.AntiVaxer.Head.CFrame)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+    
+
+
+end)
+
+a:Button("NoobE",function()
+
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = (game:GetService("Workspace").Living.NoobE.Head.CFrame)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+    
+
+
+end)
+
+a:Button("NoobE",function()
+
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = (game:GetService("Workspace").Living.NoobE.Head.CFrame)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+    wait(0.1)
+    pl.CFrame = location
+    
+
+
+end)
+
+
+
+
+
+b:DestroyGui()
